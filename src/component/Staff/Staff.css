@@ -1,0 +1,88 @@
+.staffs {
+     margin-top: 3rem;
+     
+}
+.staffs .h5 {
+     display: flex;
+     justify-content: center;
+     font-size: var(--font-header);
+     font-weight: 700;
+     color: var(--color-logo);
+}
+.staffs p {
+     display: flex;
+     justify-content: center;
+     font-size: var(--font-small);
+     line-height: 40px;
+     font-weight: 400;
+}
+.staff__div {
+     margin: 3rem 2rem;
+   
+}
+
+.staff__list {
+      display: flex;
+      margin: 2rem 0rem;
+      justify-content: center;
+}
+.staff__img {
+     width: 100%;
+     height: 100%;
+}
+.staff__img img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+}
+
+
+.h6 {
+     color: var(--color-black2);
+     font-size: var(--font-small);
+     font-weight: 500;
+     margin-top: 0.5rem;
+}
+.job__title {
+     color: var(--color-black2);
+     font-size: var(--font-smalls);
+     font-weight: 400;
+     margin-top: 0.5rem;
+}
+.profile {
+     color: var(--color-logos);
+     font-weight: 500;
+     width: 100px;
+     text-align: center;
+     margin-top: 0.5rem;
+     padding: 0.6rem;
+     font-size: var(--font-smalls);
+     border: 1px solid var(--color-logos);
+
+}
+.slick-prev:before,
+.slick-next:before {
+  color: var(--color-logos);
+  background: none;
+}
+
+@media screen and (max-width: 600px) {
+     .staffs p {
+          margin-top: 0.7rem;
+         text-align: center;
+          line-height: 20px;
+        
+     }
+     
+}
+@media screen and (width: 280px) {
+     .staffs .h5{
+          font-size: var(--font-fold);
+          margin-top: 0.7rem;
+          text-align: center;
+          line-height: 20px;
+         
+     }
+     
+ }
+

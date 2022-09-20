@@ -1,0 +1,41 @@
+section {
+  margin: 2rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+article {
+  background: var(--color-logos);
+  margin-top: 5rem;
+}
+.article__grid {
+  padding: 2rem 0rem 5rem 0rem; 
+}
+@media screen and (max-width: 1024px) {
+  section {
+       margin: 2rem 4rem;
+  }
+  .article__grid {
+       padding: 2rem 0rem 3rem 0rem; 
+  }
+ 
+
+  
+}
+@media screen and (max-width: 600px) {
+  section {
+       margin: 2rem;
+  }
+
+  
+}
+@media screen and (width: 280px) {
+  section {
+       margin: 1rem 2rem;
+  }
+  .article__grid {
+       padding: 2rem 0rem 1rem 0rem; 
+  }
+
+  
+}

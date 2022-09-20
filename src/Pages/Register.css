@@ -1,0 +1,239 @@
+
+.reg__page {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     position: relative;
+    
+}
+.close {
+     position: absolute;
+     top: 3rem;
+     right: 14rem;
+      cursor: pointer;
+}
+
+.reg .h5{
+     display: flex;
+     justify-content: center;
+     font-size: var(--font-header);
+     font-weight: 700;
+     color: var(--color-logo);
+}
+.reg .pap {
+     display: flex;
+     color: var(--color-black2);
+     justify-content: center;
+     font-size: var(--font-small);
+     line-height: 40px;
+     font-weight: 400;
+}
+.form__register {
+     display: flex;
+     width: 70%;
+     gap: 0.6rem;
+     flex-direction: column;
+}
+.input input {
+     width: calc(100 / 2);
+     border: 1px solid var(--color-logos);
+     font-family: var(--font-family);
+     font-weight: 400;
+     outline: none;
+     height: 1.5rem;
+     font-size: var(--font-small);
+     padding: 1.5rem;
+}
+
+
+
+.input {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+label {
+     line-height: 30px;
+     font-size: var(--font-small);
+}
+.full__name {
+     display: flex;
+     align-items: center;
+     gap: 5rem;
+}
+.number{
+     display: flex;
+     align-items: center;
+     gap: 5rem;
+}
+.occupation{
+     display: flex;
+     align-items: center;
+     gap: 5rem;
+}
+.submit { 
+          position: relative;
+          right: 0rem;
+          
+}
+textarea {
+     width: 100%;
+     border: 1px solid var(--color-logos);
+     resize: none;
+     outline: none;
+     height: 20vh;
+     padding: 1rem;
+     font-family: var(--font-family);
+}
+.sub {
+     width: 100%;
+     display: flex;
+     justify-content: flex-end;
+}
+.confirm {
+     display: flex;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     background: var(--color-white);
+}
+.confirm__item {
+     display: flex;
+     gap: 1rem;
+}
+.booking {
+     font-size: var(--font-fold);
+     font-weight: 700;
+     color: var(--color-logo);
+     margin-top: 0.5rem;
+}
+.booking__list li {
+      margin-top: 1rem;
+      font-size: var(--font-smalls);
+      font-weight: 400;
+}
+ .confirmation  {
+     border: 1px solid var(--color-logo);
+     text-align: center;
+     width: 130px;
+     cursor: pointer;
+     padding: 1rem;
+     color: var(--color-logo);
+     font-weight: 600  !important;
+ }
+ .errors {
+     color: var(--color-red);
+     font-size: var(--font-smalls);
+     font-weight: 400;
+ }
+ .img__confirm {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: var(--color-white);
+     align-items: center;
+     width: 100%;
+     height: 100vh;
+ }
+ 
+ .img__confirm .img {
+          position: relative;
+          width: 6rem;
+          height: 6rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5rem;
+           background: var(--color-logo);
+    
+ } 
+ .img__confirm .img img {
+     width: 3rem;
+     height: 2rem;
+ }
+ .img__content {
+     font-size: var(--font-header);
+     margin-top: 2rem;
+     color: var(--color-zero);
+     font-weight: 600;
+ }
+ @media screen and (max-width: 1024px) {
+     .close {
+          top: 3rem;
+          right: 6rem;
+     }
+
+
+ }
+
+
+@media screen and (max-width: 600px) {
+     .full__name {
+         
+          gap: 2rem;
+     }
+     .number{
+        
+          gap: 2rem;
+     }
+     .occupation{
+      
+          gap: 2rem;
+     }
+     .input input {
+          width: calc(100% / 1 - 0rem);
+          padding: 1rem 0.5rem;
+     }
+     label {
+          font-size: var(--font-smallz);
+     }
+     .input input::placeholder {
+          font-size: var(--font-smalls);
+     }
+     .reg .h5 {
+          line-height: 40px;
+     }
+     .reg .pap{
+         text-align: center;
+         font-size: var(--font-smalls);
+         line-height: 23px;
+          color: var(--color-logo);
+     }
+     .img__content {
+          font-size: var(--font-fold);
+        
+      }
+      .close {
+          top: 2rem;
+          right: 3rem;
+     }
+
+     
+}
+@media screen and (width: 280px) 
+{
+     .reg .h5 {
+          line-height: 40px;
+          font-size: var(--font-fold);
+     }
+     .reg .pap{
+         text-align: center;
+         font-size: var(--font-smalls);
+         line-height: 23px;
+          color: var(--color-logo);
+     }
+     .input input::placeholder {
+          font-size: var(--font-smallz);
+     }
+     .input .date {
+          width: 5rem;
+     }
+     .img__content {
+          font-size: var(--font-small);
+        
+      }
+}

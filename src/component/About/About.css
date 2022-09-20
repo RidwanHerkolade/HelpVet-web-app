@@ -1,0 +1,130 @@
+.about__section {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     margin-top: 3rem;
+     gap: 1rem;
+}
+.about {
+     display: flex;
+     align-items: center;
+}
+.about__image {
+     width: 70%;
+}
+.about__image img {
+     width: 100%;
+     object-fit: contain;
+
+    
+}
+.about__content{
+     width: 100%;
+}
+.about__content h4 {
+     color: var(--color-logo);
+     text-transform: uppercase;
+     font-size: var(--font-header);
+     text-align: center;
+     font-weight: 600;
+     margin-bottom: 1rem;
+}
+ .imgs1 {
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     height: 2rem;
+     width: 3rem;
+     background: var(--color-imgs2);
+     
+} 
+.imgs2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 2rem;
+     width: 3rem;
+     background: var(--color-imgs2);
+}
+.imgs3 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 2rem;
+     width: 3rem;
+     background: var(--color-grey);
+}
+
+
+.para__content {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     width: 100%;
+}
+.para__content img {
+     width: 0.8rem;
+     object-fit: contain;
+     height: 0.8rem;
+}
+.para__content .para__div h5 {
+     font-size: var(--font-small);
+     color: var(--color-black2);
+     font-weight: 700;
+     margin-top: 1rem;
+}
+.para__content .para__div small {
+     color: var(--color-black2);
+     font-size: var(--font-smalls);
+     font-weight: 500;
+}
+@media screen and (max-width: 1024px) {
+     .about__image {
+          width: 100%;
+     }
+     .about__section {
+         
+          gap: 3rem;
+     }
+
+}
+@media screen and (max-width: 600px) {
+     .about__section {
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .para__content .para__div small {
+          font-size: var(--font-smalls) ;
+          font-weight: 500;
+     }
+     .para__content img {
+          width: 0.7rem;
+          height: 0.7rem;
+     }
+     .imgs1 {
+          height: 1.5rem;
+        
+     } 
+     .imgs2{
+          height: 1.5rem;
+     }
+     .imgs3 {
+          height: 1.5rem;
+     }
+     
+}
+@media screen and (width: 280px) {
+     .para__content {
+          /* width: 15rem; */
+     }
+     .imgs1 {
+          height: 1rem;
+        
+     } 
+     .imgs2{
+          height: 1rem;
+     }
+     .imgs3 {
+          height: 1rem;
+     }
+
+     
+}

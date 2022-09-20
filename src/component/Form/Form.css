@@ -1,0 +1,107 @@
+
+.form .h5 {
+     display: flex;
+     justify-content: center;
+     font-size: var(--font-header);
+     font-weight: 700;
+     color: var(--color-logo);
+}
+.form p {
+     display: flex;
+     justify-content: center;
+     font-size: var(--font-small);
+     line-height: 40px;
+     font-weight: 400;
+}
+form {
+     display: grid;
+     grid-template-columns: 55% 45%;
+     gap: 5rem;
+   
+}
+.form__input {
+     display: flex;
+     align-items: center;
+     position: relative;
+}
+.form__img {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+.form__img img {
+     width: 60%;
+}
+.form__input input {
+     width: 100%;
+     border: 1px solid var(--color-logos);
+     font-family: var(--font-family);
+     outline: none;
+     height: 1.5rem;
+     padding: 1.5rem;
+}
+input::placeholder {
+     font-size: var(--font-smalls);
+     color: var(--color-grey);
+}
+button {
+     position: absolute;
+     cursor: pointer;
+     background: none;
+     right: 0.5rem;
+     font-family: var(--font-family);
+     height: 1rem;
+     display: flex;
+     align-items: center;
+     text-transform: capitalize;
+     text-align: center;
+     padding: 1rem;
+     font-size: var(--font-smalls);
+     border: 1px solid var(--color-logos);
+     color: var(--color-logos);
+     font-weight: 600;
+}
+
+
+@media screen and (max-width: 1024px) {
+     form {
+          gap: 3rem;
+     }
+
+
+     
+}
+@media screen and (max-width: 600px) {
+     .section__grid {
+          flex-direction: column;
+     }
+     form {
+          border: 2px solid yellow;
+        grid-template-columns: 100%;
+          margin-top: 2rem;
+     }
+     input {
+          border:  2px solid yellow;
+     }
+   
+
+     .form p {
+          text-align: center;
+          line-height: 20px;
+        margin-top: 0.7rem;
+     }
+     
+}
+@media screen and (width: 280px) {
+     .form .h5 {
+          font-size: var(--font-fold);
+          font-weight: 800;
+          
+     }
+     
+     input {
+          width: 15rem;
+     }
+
+     
+}
