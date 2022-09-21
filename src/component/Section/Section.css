@@ -32,22 +32,23 @@
 }
 .section__content .book {
      display: flex;
+     align-items: center;
      border-bottom: 1px solid var(--color-logos);
      width: 10rem;
      padding: 0.5rem 0rem;
-     text-align: center;
      color: var(--color-logos);
      font-size: var(--font-book);
+     cursor: pointer;
      align-items: center;
      margin-top: 1rem;
      font-weight: 600;
      gap: 0.5rem;
 }
-.section__content .book span {
-    font-size: var(--font-smallz);
-    display: flex;
-    font-weight: 600;
-    align-items: center;
+.book__link {
+     display: flex;
+     align-items: center;
+     gap: 0.3rem;
+     color: var(--color-logos);
 }
 .section__image .div {
      width: 100%;
