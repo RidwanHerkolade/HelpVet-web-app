@@ -131,7 +131,7 @@ header {
    }
    @media screen and (max-width: 600px) {
     .nav__bar {
-      margin: 0.5rem 1rem;
+      margin: 1rem 1rem;
       padding: 0rem;
       display: flex;
       align-items: center;
