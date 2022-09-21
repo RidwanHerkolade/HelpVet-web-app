@@ -1,4 +1,5 @@
 * {
+  /* overflow-x: hidden; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -16,6 +17,7 @@
    ---font-smallz: 13px;
    
    --font-logo: 15px;
+   --font-smallss: 6px;
    --color-red: red;
    --color-imgs1:  rgba(183, 4, 133, 0.1);
    --color-imgs2:  rgba(251, 21, 21, 0.1);
@@ -42,11 +44,11 @@ img {
 }
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body {
   padding: 0rem;
   background: var(--color-white);
-  /* background: yellow; */
   margin: 0rem;
   font-family: var(--font-family);
 }

@@ -49,9 +49,6 @@
     font-weight: 600;
     align-items: center;
 }
-.section__image {
-     /* border: 2px solid blue; */
-}
 .section__image .div {
      width: 100%;
 }
@@ -82,12 +79,12 @@
 }
 @media screen and (max-width: 600px) {
      .head__count {
-          gap: 2rem;
+          gap: 0.7rem;
           
      }
      .count small {
           color: var(--color-grey);
-          font-size: 3px;
+          font-size: var(--font-smallz);
           text-align: center;
           margin-top: 1rem;
           line-height: 0rem;
@@ -105,8 +102,12 @@
          
       }
       .head__count {
-          gap: 1rem;
+          gap: 0.5rem;
           
+     }
+     .count small {
+          color: var(--color-grey);
+          font-size: var(--font-smallss);
      }
      
 }

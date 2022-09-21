@@ -11,6 +11,7 @@
 .services p {
      display: flex;
      justify-content: center;
+
      font-size: var(--font-small);
      line-height: 40px;
      font-weight: 400;
@@ -48,6 +49,7 @@
 }
 .services__list {
      display: flex;
+     margin: 0.5rem;
      gap: 4rem;
 }
 

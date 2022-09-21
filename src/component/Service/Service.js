@@ -8,7 +8,7 @@ function Service(props){
            <div className="service">
                <div className="img__n">
                      <div className="service__img">
-                           <img src={props.serviceImage}/>
+                           <img src={props.serviceImage} alt="serviceImg"/>
                      </div>
                </div>
                
@@ -21,7 +21,7 @@ function Service(props){
           </div>
 
     
-</div>
+      </div>
 
      )
 }

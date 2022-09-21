@@ -172,6 +172,9 @@ textarea {
 
 
 @media screen and (max-width: 600px) {
+     .form__register {
+          width: 85%;
+     }
      .full__name {
          
           gap: 2rem;
@@ -199,7 +202,7 @@ textarea {
      }
      .reg .pap{
          text-align: center;
-         font-size: var(--font-smalls);
+         font-size: var(--font-book);
          line-height: 23px;
           color: var(--color-logo);
      }
@@ -208,9 +211,14 @@ textarea {
         
       }
       .close {
-          top: 2rem;
-          right: 3rem;
+          top: 1.5rem;
+          right: 5rem;
      }
+     .errors {
+        
+          font-size: var(--font-smallz);
+          
+      }
 
      
 }
@@ -230,10 +238,27 @@ textarea {
           font-size: var(--font-smallz);
      }
      .input .date {
-          width: 5rem;
+          width: 6.5rem;
      }
      .img__content {
           font-size: var(--font-small);
         
       }
+      .close {
+          top: 1rem;
+
+     }
+     .errors {
+          font-size: var(--font-small);
+          
+      }
+      .booking {
+          font-size: var(--font-smalls);
+         
+     }
+     .booking__list li {
+           margin-top: 0.5rem;
+           font-size: var(--font-smallss);
+           font-weight: 400;
+     }
 }

@@ -5,6 +5,7 @@
 .staffs .h5 {
      display: flex;
      justify-content: center;
+     text-align: center;
      font-size: var(--font-header);
      font-weight: 700;
      color: var(--color-logo);

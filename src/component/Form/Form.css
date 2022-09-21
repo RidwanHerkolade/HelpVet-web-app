@@ -76,12 +76,11 @@ button {
           flex-direction: column;
      }
      form {
-          border: 2px solid yellow;
         grid-template-columns: 100%;
           margin-top: 2rem;
      }
      input {
-          border:  2px solid yellow;
+          border:  2px solid var(--color-logo);
      }
    
 

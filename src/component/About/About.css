@@ -88,12 +88,16 @@
 
 }
 @media screen and (max-width: 600px) {
+    
      .about__section {
           grid-template-columns: repeat(1, 1fr);
      }
      .para__content .para__div small {
           font-size: var(--font-smalls) ;
           font-weight: 500;
+     }
+     .about__image {
+          width: 95%;
      }
      .para__content img {
           width: 0.7rem;
@@ -112,9 +116,7 @@
      
 }
 @media screen and (width: 280px) {
-     .para__content {
-          /* width: 15rem; */
-     }
+  
      .imgs1 {
           height: 1rem;
         

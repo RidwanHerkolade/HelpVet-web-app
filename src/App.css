@@ -23,15 +23,21 @@ article {
   
 }
 @media screen and (max-width: 600px) {
+  *{
+    padding: 0rem;
+    margin: 0rem;
+  
+  }
   section {
-       margin: 2rem;
+       margin: 2rem 1.5rem;
   }
 
   
 }
 @media screen and (width: 280px) {
   section {
-       margin: 1rem 2rem;
+       margin: 2rem 1.5rem;
+
   }
   .article__grid {
        padding: 2rem 0rem 1rem 0rem; 

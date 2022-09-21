@@ -14,7 +14,7 @@ function Section(props){
                      </div>
                      <div className="section__image">
                           <div className="div">
-                                <img src={props.imgSec}/>
+                                <img src={props.imgSec} alt="imgSec"/>
                          
                          
                           </div>
