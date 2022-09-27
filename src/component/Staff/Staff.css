@@ -1,6 +1,7 @@
 .staffs {
      margin-top: 3rem;
      
+     
 }
 .staffs .h5 {
      display: flex;
@@ -18,17 +19,16 @@
      font-weight: 400;
 }
 .staff__div {
-     margin: 3rem 2rem;
-   
-}
+     margin: 0rem;
 
+}
 .staff__list {
-      display: flex;
-      margin: 2rem 0rem;
-      justify-content: center;
+      margin: 0rem 0rem;
+      padding: 0rem;
+      
 }
 .staff__img {
-     width: 100%;
+     width: 90%;
      height: 100%;
 }
 .staff__img img {
@@ -51,7 +51,6 @@
      margin-top: 0.5rem;
 }
 .profile {
-     color: var(--color-logos);
      font-weight: 500;
      width: 100px;
      text-align: center;
@@ -61,20 +60,222 @@
      border: 1px solid var(--color-logos);
 
 }
-.slick-prev:before,
-.slick-next:before {
-  color: var(--color-logos);
-  background: none;
+.profile .pro{
+     color: var(--color-logos);
+     text-transform: capitalize;
+}
+.slick-prev::before,
+.slick-next::after {
+  display: none;
+}
+.detail {
+     display: flex;
+     background-color: var(--color-logo);
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+ }
+ .detail__div {
+     width: 70%;
+     background-color: var(--detailBg);
+     padding: 1rem;
+     border-radius: 2rem;
+     box-shadow: var(--box-shadow);
+ }
+ .detail__profile {
+     display: flex;
+     justify-content: flex-start;
+     gap: 1rem;
+     align-items: center;
+ }
+ .nameDta {
+     text-align: center;
+ }
+ .nameDta small {
+     color: var(--color-logos);
+     font-weight: 600;
+ }
+ .detail__profile h3 {
+     color: var(--color-logos);
+     font-size: var(--font-header);
+ }
+ .label {
+     color: var(--color-logos);
+     font-size: var(--font-book);
+ }
+ #label {
+     display: none;
+     font-size: var(--font-smalls);
+}
+ .detail__img {
+     width: 4rem;
+     height: 4rem;
+ }
+ .detail__img img {
+     width: 100%;
+     height: 100%;
+     border-radius: 3rem;
+ }
+ .form__details {
+     display: flex;
+     padding: 1rem;
+     flex-direction: column;
+     justify-content: center;
+ }
+.form__details {
+     gap: 0rem;
+}
+.fullName {
+     display: flex;
+     gap: 1rem;
+}
+.position {
+     display: flex;
+     gap: 1rem;
+}
+.duration {
+     display: flex;
+     gap: 1rem;
+}
+.address {
+     display: flex;
+     gap: 1rem;
+}
+.detail__input input {
+     width: 100%;
+     border: 1px solid var(--color-logos);
+     font-family: var(--font-family);
+     font-weight: 400;
+     outline: none;
+     height: 1rem;
+     font-size: var(--font-small);
+     padding: 1rem;
+     gap: 1rem;
+}
+.detail__input input:focus {
+     font-size: var(--font-small);
+     font-family: var(--font-family);
 }
 
+
+.detail__input {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+.detail__btn {
+     display: flex;
+
+     justify-content: flex-end;
+     gap: 1rem;
+     text-transform: capitalize;
+     font-weight: 700;
+     margin-top: 0.5rem;
+     cursor: pointer;
+}
+.changes {
+     padding: 0.5rem 1rem;
+     color: var(--color-logo);
+     font-size: var(--font-small);
+     background: var(--color-white);
+     border-radius: 0.5rem;
+}
+.saveChange {
+     padding: 0.5rem 1rem;
+     color: var(--color-white);
+     font-size: var(--font-small);
+     background: var(--color-logos);
+     border-radius: 0.5rem;
+}
+.form__address {
+          width: 100%;
+          border: 1px solid var(--color-logos);
+          resize: none;
+          outline: none;
+          height: 15vh;
+          padding: 1rem;
+          font-family: var(--font-family);
+}
+
+@media screen and (max-width:1024px) {
+     .detail__div {
+          width: 70%;
+          padding: 1rem;
+          border-radius: 1rem;
+          margin: 0rem;
+      }
+      .label {
+          color: var(--color-logos);
+          font-size: var(--font-smalls);
+      }
+      .detail__input input {
+          font-size: var(--font-smalls);
+          padding: 1rem;
+          gap: 1rem;
+     }
+     #label {
+          display: flex;
+          font-size: var(--font-smalls);
+     }
+
+     #labels {
+          font-size: var(--font-smallz);
+          display: none;
+     }
+     .form__address {
+          height: 10vh;
+}
+
+    
+     
+     
+}
 @media screen and (max-width: 600px) {
+     .staff__div {
+          padding: 0rem;
+          margin: 0rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
      .staffs p {
-          margin-top: 0.7rem;
-         text-align: center;
+           margin-top: 0.7rem;
+           text-align: center;
           line-height: 20px;
         
      }
-     
+     .detail__div {
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 1rem;
+          border-radius: 0rem;
+          margin: 0rem;
+      }
+      .detail__btn {
+          margin-top: 1.5rem;
+     }
+     .changes {
+          font-size: var(--font-smalls);
+     }
+     .saveChange {
+          font-size: var(--font-smalls);
+     }
+     #labels {
+          font-size: var(--font-smalls);
+          display: none;
+     }
+     #label {
+          display: flex;
+          font-size: var(--font-smalls);
+     }
+     .staff__img {
+          width: 100%;
+          height: 100%;
+     }
 }
 @media screen and (width: 280px) {
      .staffs .h5{

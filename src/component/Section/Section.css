@@ -1,5 +1,4 @@
 
-
 .section__grid {
      display: flex;
      justify-content: center;
@@ -11,11 +10,11 @@
      font-style: normal;
 }
 .section__content h2  {
-     font-size: var(--font-header);
+     font-size: var(--font-new);
      color: var(--color-black2);
      letter-spacing: 1px;
-     font-weight: 700;
-     line-height: 25px;
+     font-weight: 800;
+     line-height: 35px;
 }
 .section__content h2 .span1 {
     color: var(--color-blue);
@@ -83,6 +82,10 @@
           gap: 0.7rem;
           
      }
+     .section__content h2  {
+          font-size: var(--font-header);
+          color: var(--color-black2);
+     }
      .count small {
           color: var(--color-grey);
           font-size: var(--font-smallz);
@@ -100,6 +103,7 @@
 @media screen and (width: 280px) {
      .section__content h2 {
           font-size: var(--font-fold);
+          line-height: 30px;
          
       }
       .head__count {
@@ -110,5 +114,5 @@
           color: var(--color-grey);
           font-size: var(--font-smallss);
      }
-     
+
 }

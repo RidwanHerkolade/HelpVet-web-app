@@ -7,7 +7,7 @@ export default [
           staffView: "view Profile",
      },
      {
-          id: 1,
+          id: 2,
           staffName: "Elena jones",
           staffImg: "../images/rec6.png",
           staffPosition: "Surgical",
@@ -16,28 +16,28 @@ export default [
 
      },
      {
-          id: 1,
+          id: 3,
           staffName: "Richard kayy",
           staffImg: "../images/rec7.png",
           staffPosition: "Gynacology",
           staffView: "view Profile",
      },
      {
-          id: 1,
+          id: 4,
           staffName: "Richard kayy",
           staffImg: "../images/rec7.png",
           staffPosition: "Gynacology",
           staffView: "view Profile",
      },
      {
-          id: 1,
+          id: 5,
           staffName: "Khalid maha",
           staffImg: "../images/rec5.png",
           staffPosition: "Genral",
           staffView: "view Profile",
      },
      {
-          id: 1,
+          id: 6,
           staffName: "Elena jones",
           staffImg: "../images/rec6.png",
           staffPosition: "Surgical",
@@ -45,14 +45,14 @@ export default [
 
      },
      {
-          id: 1,
+          id: 7,
           staffName: "Khalid maha",
           staffImg: "../images/rec5.png",
           staffPosition: "Genral",
           staffView: "view Profile",
      },
      {
-          id: 1,
+          id: 8,
           staffName: "Richard kayy",
           staffImg: "../images/rec7.png",
           staffPosition: "Gynacology",
@@ -60,7 +60,7 @@ export default [
           
      },
      {
-          id: 1,
+          id: 9,
           staffName: "Elena jones",
           staffImg: "../images/rec6.png",
           staffPosition: "Surgical",

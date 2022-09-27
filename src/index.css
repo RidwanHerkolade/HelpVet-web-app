@@ -15,7 +15,7 @@
    --font-book: 13px;
    --font-nav: 1rem;
    ---font-smallz: 13px;
-   
+   --detailBg: #E5E5E5;
    --font-logo: 15px;
    --font-smallss: 6px;
    --color-red: red;
@@ -26,6 +26,7 @@
    --color-img5: rgba(0, 150, 255, 0.1);
    --color-img6: rgba(29, 0, 85, 0.1);
    --font-header: 25px;
+   --font-new: 28px;
    --color-grey: #969A99;
    --color-black: #120033;
    --color-zero: #000000;

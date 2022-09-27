@@ -6,6 +6,7 @@ import Register from './Pages/Register';
 import RegisterHead from './Pages/RegisterHead';
 import Confirm from './Pages/Confirm';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Profile from './component/Staff/Profile';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,16 +15,17 @@ ReactDOM.render(
            <Route path="register" element={<Register />} />
            <Route path="registerhead" element={<RegisterHead />} />
            <Route path="confirm" element={<Confirm/>} />
+           <Route path="/staff/:staffId" element={<Profile />} />
+           
        
-       
-       </Routes>
-  
-  
+      </Routes>
   
   </BrowserRouter>,
 
 
 
+
 document.getElementById('root'))
+
 
 

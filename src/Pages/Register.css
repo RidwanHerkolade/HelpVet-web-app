@@ -48,8 +48,6 @@
      padding: 1.5rem;
 }
 
-
-
 .input {
      display: flex;
      flex-direction: column;
@@ -161,6 +159,7 @@ textarea {
      color: var(--color-zero);
      font-weight: 600;
  }
+
  @media screen and (max-width: 1024px) {
      .close {
           top: 3rem;
