@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [formErrors, setFormErrors] = useState([]);
-  const [submit, setSubmit] = useState(false);
   const [register, setRegister] = useState({
      fullName: "",
      petName: "",
@@ -50,35 +49,29 @@ function Register() {
     if (!formValue.textArea) {
       errors.textArea = "Fill in your text area";
     }
-    return setFormErrors(errors);
+    setFormErrors(errors);
+    return errors;
   }
 
 
    const history = useNavigate();
 
    function handleSubmit(event) {
-     
        event.preventDefault();
-
-       setSubmit(true)
-
-       handleValidate(register);
-       if(Object.keys(formErrors).length === 0 ) {
+       const validation = handleValidate(register);
+       if(Object.keys(validation).length !== 0 ) {
            return;
         }
-
-          history("/confirm",  { state: {register}});
-
+          history("/confirm",  { state: {register}}); 
   };
+
   function handleClose() {
     history("/");
   }
   
 
   return (
-    <div className="reg__page">
-   
-   
+    <div className="reg__page"> 
       <div className="close" onClick={handleClose}>
         <CloseIcon />
       </div>
@@ -120,9 +113,9 @@ function Register() {
         </div>
         <div className="number">
           <div className="input">
-            <label htmlFor="phone number">Phone </label>
+            <label htmlFor="phone">Phone </label>
             <input
-              type="text"
+              type="number"
               value={register.phoneNum}
               placeholder="Phone num"
               name="phoneNum"
@@ -134,7 +127,7 @@ function Register() {
             <label htmlFor="date">Booking date</label>
 
             <input
-              type="text"
+              type="date"
               className="date"
               value={register.dateNum}
               placeholder="date"
@@ -177,7 +170,7 @@ function Register() {
         ></textarea>
         <p className="errors">{formErrors.textArea}</p>
         <div className="sub">
-          <button className="submit">send message</button>
+          <button type="submit" className="submit">send message</button>
         </div>
       </form>
     </div>

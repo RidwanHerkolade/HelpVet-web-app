@@ -1,4 +1,4 @@
-// import { Functions } from "@mui/icons-material";
+
 import React,{useState} from "react";
 import {useParams, useNavigate} from "react-router-dom"
 import details from "./details";
@@ -9,17 +9,17 @@ function Profile(){
 
      // THE USESTATE HOOK FOR PICKING EACH OF THE INPUT VALUE
      const [proDetails, setProDetails] = useState({
-          fullName: "",
-          email: "",
-          designation: "",
-          staffId: "",
-          phoneNumber: "",
-          dateJoin: "",
-          dateBirth: "",
-          docName: "",
-          nationName:"",
-          stateName:"",
-          textArea: ""
+           fullName: "",
+           email: "",
+           designation: "",
+           staffId: "",
+           phoneNumber: "",
+           dateJoin: "",
+           dateBirth: "",
+           docName: "",
+           nationName:"",
+           stateName:"",
+           textArea: ""
      });
 
      // THE EVENT TARGET FOR THE INPUT VALUE
